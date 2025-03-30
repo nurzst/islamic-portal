@@ -1,6 +1,6 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
-    const city = "Astana";
-    const country = "Kazakhstan";
+    const city = "Astana"; 
+    const country = "Kazakhstan"; 
     const apiUrl = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`;
 
     fetch(apiUrl)
