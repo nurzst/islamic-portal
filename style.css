@@ -1,0 +1,43 @@
+﻿/* Общий стиль */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('https://source.unsplash.com/1600x900/?mosque') no-repeat center center/cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+h1 {
+    background: rgba(0, 128, 0, 0.8);
+    padding: 15px;
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Карточки времени намазов */
+.prayer-card {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Зикры */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
