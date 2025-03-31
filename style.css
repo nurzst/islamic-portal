@@ -1,87 +1,85 @@
-﻿/* Фон сайта */
+﻿/* Основные стили */
 body {
     font-family: 'Arial', sans-serif;
-    text-align: center;
-    background: url('https://unsplash.com/photos/view-of-sultan-ahmed-moaque-under-gray-skies-fTIQnxWvR2o') no-repeat center center fixed;
-    background-size: cover;
+    background: #121212;
     color: white;
     margin: 0;
     padding: 0;
-}
-
-/* Полупрозрачный контейнер */
-.container {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    margin: 30px auto;
-    border-radius: 15px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-/* Заголовки */
-h1 {
-    background: rgba(0, 128, 0, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* Блок времени намазов */
-.prayer-card {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 150px;
     text-align: center;
-    font-size: 18px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
 }
 
-.prayer-card:hover {
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.3);
+/* Контейнер */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок */
+h1 {
+    color: #00A878;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Время намазов */
+.prayer-time {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.prayer-time:hover {
+    background: #333;
 }
 
 /* Зикры и дуа */
-ul {
+.dua-list {
     list-style: none;
     padding: 0;
 }
 
-ul li {
-    background: rgba(0, 0, 0, 0.5);
+.dua-list li {
+    background: #2A2A2A;
     padding: 10px;
     margin: 5px;
-    border-radius: 5px;
-    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.dua-list li:hover {
+    background: #00A878;
+    color: white;
+}
+
+/* Меню внизу */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1E1E1E;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    color: white;
     font-size: 18px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-ul li:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* Адаптация для мобильных */
-@media (max-width: 600px) {
-    .prayer-card {
-        width: 100px;
-        font-size: 16px;
-    }
-
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
+.menu-item:hover {
+    color: #00A878;
 }
