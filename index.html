@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Исламский Портал</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Исламский портал</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>📖 Исламский Портал</h1>
-        <div class="menu">
-            <a href="quran.html" class="button">📖 Коран</a>
-            <a href="zikr.html" class="button">🤲 Зикры</a>
-            <a href="dua.html" class="button">🕋 Дуа</a>
+    <div class="background">
+        <!-- Время намазов -->
+        <div class="prayer-times">
+            <h2>Время намазов</h2>
+            <ul id="prayer-list">
+                <li>Фаджр: <span id="fajr">--:--</span></li>
+                <li>Восход: <span id="sunrise">--:--</span></li>
+                <li>Зухр: <span id="dhuhr">--:--</span></li>
+                <li>Аср: <span id="asr">--:--</span></li>
+                <li>Магриб: <span id="maghrib">--:--</span></li>
+                <li>Иша: <span id="isha">--:--</span></li>
+            </ul>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="buttons">
+            <a href="zikr.html" class="button zikr">🤲 Зикры</a>
+            <a href="dua.html" class="button menu">•••</a>
+            <a href="quran.html" class="button quran">📖 Коран</a>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

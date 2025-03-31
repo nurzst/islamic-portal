@@ -1,85 +1,80 @@
-﻿/* Основные стили */
-body {
-    font-family: 'Arial', sans-serif;
-    background: #121212;
-    color: white;
+﻿@font-face {
+    font-family: 'Avant Garde';
+    src: url('fonts/AvantGarde.ttf') format('truetype');
+}
+
+body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Avant Garde', sans-serif;
     text-align: center;
 }
 
-/* Контейнер */
-.container {
-    max-width: 400px;
-    margin: 20px auto;
-    background: #1E1E1E;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Заголовок */
-h1 {
-    color: #00A878;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-/* Время намазов */
-.prayer-time {
+/* Фон мечети */
+.background {
+    background: url('images/mosque.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    background: #222;
-    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Блок времени намазов */
+.prayer-times {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     border-radius: 10px;
-    margin: 10px 0;
-    font-size: 18px;
-    transition: 0.3s;
+    margin-bottom: 20px;
 }
 
-.prayer-time:hover {
-    background: #333;
-}
-
-/* Зикры и дуа */
-.dua-list {
+.prayer-times ul {
     list-style: none;
     padding: 0;
 }
 
-.dua-list li {
-    background: #2A2A2A;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.dua-list li:hover {
-    background: #00A878;
-    color: white;
-}
-
-/* Меню внизу */
-.bottom-menu {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #1E1E1E;
-    padding: 10px 0;
+.prayer-times li {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 5px 0;
 }
 
-.menu-item {
-    color: white;
-    font-size: 18px;
-    padding: 10px;
+/* Кнопки */
+.buttons {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.button {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 15px 25px;
+    border-radius: 50px;
     text-decoration: none;
-    transition: 0.3s;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.menu-item:hover {
-    color: #00A878;
+.quran {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.menu {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zikr {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
 }
