@@ -4,31 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Исламский портал</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="background">
-        <!-- Время намазов -->
-        <div class="prayer-times">
-            <h2>Время намазов</h2>
-            <ul id="prayer-list">
-                <li>Фаджр: <span id="fajr">--:--</span></li>
-                <li>Восход: <span id="sunrise">--:--</span></li>
-                <li>Зухр: <span id="dhuhr">--:--</span></li>
-                <li>Аср: <span id="asr">--:--</span></li>
-                <li>Магриб: <span id="maghrib">--:--</span></li>
-                <li>Иша: <span id="isha">--:--</span></li>
-            </ul>
-        </div>
-
-        <!-- Кнопки -->
-        <div class="buttons">
-            <a href="zikr.html" class="button zikr">🤲 Зикры</a>
-            <a href="dua.html" class="button menu">•••</a>
-            <a href="quran.html" class="button quran">📖 Коран</a>
-        </div>
+<body class="main-page">
+    <div class="namaz-timing">
+        <h2>Время намаза</h2>
+        <p>Фаджр: 05:10</p>
+        <p>Зухр: 13:20</p>
+        <p>Аср: 17:00</p>
+        <p>Магриб: 19:15</p>
+        <p>Иша: 21:00</p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="buttons">
+        <a href="quran.html" class="button">Коран</a>
+        <a href="dua.html" class="button">•••</a>
+        <a href="zikr.html" class="button">Зикры</a>
+    </div>
 </body>
 </html>

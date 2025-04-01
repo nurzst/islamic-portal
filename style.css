@@ -1,80 +1,43 @@
-﻿@font-face {
-    font-family: 'Avant Garde';
-    src: url('fonts/AvantGarde.ttf') format('truetype');
-}
-
-body, html {
-    margin: 0;
-    padding: 0;
+﻿body {
     font-family: 'Avant Garde', sans-serif;
+    color: white;
     text-align: center;
 }
 
-/* Фон мечети */
-.background {
-    background: url('images/mosque.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.main-page {
+    background-image: url('../images/quran-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Блок времени намазов */
-.prayer-times {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.quran-page {
+    background-image: url('../images/quran-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.prayer-times ul {
-    list-style: none;
-    padding: 0;
+.dua-page {
+    background-image: url('../images/dua-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.prayer-times li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-}
-
-/* Кнопки */
-.buttons {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+.zikr-page {
+    background-image: url('../images/zikr-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .button {
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 15px 25px;
-    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.quran {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-
-.menu {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.zikr {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
+    margin: 10px;
 }
